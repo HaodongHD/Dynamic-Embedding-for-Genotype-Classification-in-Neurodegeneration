@@ -1,6 +1,6 @@
 # Dynamic Trajectory Embedding for Genotype Classification in Neurodegeneration
 
-> **Status:** Work prepared for publish — code not yet released. This repository currently presents results and methodology overview only.
+> **Status:** Work in progress — code not yet released. This repository currently presents results and methodology overview only.
 
 ---
 
@@ -72,20 +72,20 @@ Cluster quality is assessed using the **silhouette score**, which measures how w
 
 ## Figures
 
-### Figure 1 — Static embedding (UMAP)
-*Embedding of raw static coordinates. Near-zero silhouette scores across all regions indicate that genotypes are not separable from positional features alone.*
+### Figure 1 — Static embedding (baseline)
+*Silhouette scores are effectively zero across all six brain regions. Genotypes are completely indistinguishable from static coordinate features alone.*
 
-![Static embedding](Figures/chart_static.png)
+![Static embedding silhouette scores](Figures/chart_static.png)
 
-### Figure 2 — Trajectory embedding, all time points (MDS)
-*Embedding of full longitudinal trajectory features. Genotypes separate clearly in all six brain regions, with silhouette scores ranging from 0.15 to 0.87.*
+### Figure 2 — Trajectory embedding (all time points)
+*Silhouette scores jump dramatically when the full longitudinal trajectory is encoded, ranging from 0.15 (entorhinal cortex) to 0.87 (locus coeruleus). All six regions show clear genotype separation.*
 
-![Full trajectory embedding](Figures/chart_trajectory_full.png)
+![Full trajectory embedding silhouette scores](Figures/chart_trajectory_full.png)
 
-### Figure 3 — Trajectory embedding, first two time points only (UMAP)
-*Trajectory embedding restricted to the earliest observations. Meaningful separation is retained, particularly in the hypothalamus and prefrontal cortex, demonstrating that early dynamics carry predictive signal.*
+### Figure 3 — Trajectory embedding (first two time points only)
+*Even with only the earliest two time points, the trajectory embedding far exceeds the static baseline. Hypothalamus (0.61) and prefrontal cortex (0.47) retain particularly strong separability, suggesting disease-state information is encoded early in the trajectory.*
 
-![Partial trajectory embedding](Figures/chart_trajectory_partial.png)
+![Partial trajectory embedding silhouette scores](Figures/chart_trajectory_partial.png)
 
 ---
 
