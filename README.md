@@ -75,17 +75,17 @@ Cluster quality is assessed using the **silhouette score**, which measures how w
 ### Figure 1 — Static embedding (UMAP)
 *Embedding of raw static coordinates. Near-zero silhouette scores across all regions indicate that genotypes are not separable from positional features alone.*
 
-![Static embedding](figures/static_embedding.png)
+![Static embedding](Figures/chart_static.png)
 
 ### Figure 2 — Trajectory embedding, all time points (MDS)
 *Embedding of full longitudinal trajectory features. Genotypes separate clearly in all six brain regions, with silhouette scores ranging from 0.15 to 0.87.*
 
-![Full trajectory embedding](figures/trajectory_full.png)
+![Full trajectory embedding](Figures/chart_trajectory_full.png)
 
 ### Figure 3 — Trajectory embedding, first two time points only (UMAP)
 *Trajectory embedding restricted to the earliest observations. Meaningful separation is retained, particularly in the hypothalamus and prefrontal cortex, demonstrating that early dynamics carry predictive signal.*
 
-![Partial trajectory embedding](figures/trajectory_partial.png)
+![Partial trajectory embedding](Figures/chart_trajectory_partial.png)
 
 ---
 
