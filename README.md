@@ -1,6 +1,6 @@
 # Dynamic Trajectory Embedding for Genotype Classification in Neurodegeneration
 
-> **Status:** Work not published — code not yet released. This repository currently presents results and methodology overview only.
+> **Status:** Work prepared for publish — code not yet released. This repository currently presents results and methodology overview only.
 
 ---
 
